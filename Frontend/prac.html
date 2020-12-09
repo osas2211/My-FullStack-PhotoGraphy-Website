@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: black;
+        }
+
+        header ul{
+            display: flex;
+            padding: 0;
+            list-style: none;
+        }
+        header li{
+            -padding-left: 20px;
+        }
+
+        header h1{
+            color: cornsilk;
+        }
+
+        header li a{
+            text-decoration: none;
+            display: block;
+            color: cornsilk;
+            padding: 0.7rem;
+        }
+
+        header li a:hover{
+            background-color: #555555;
+        }
+
+        .toggle-btn{
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            margin: 20px;
+        }
+
+        .toggle-btn .bar{
+            background-color: cornsilk;
+            width: 100%;
+            height: 3px;
+            border-radius: 10px;
+        }
+
+
+
+
+        @media (max-width: 786px){
+            nav{
+                display: none;
+            }
+            .toggle-btn{
+                display: flex;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Icon</h1>
+
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
